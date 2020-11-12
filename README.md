@@ -28,28 +28,28 @@ Preventing child mortality is a key indicator of medical progress.  A large prec
 ## Data
 Our data came from Kaggle.com (https://www.kaggle.com/andrewmvd/fetal-health-classification).  The data comes from 2126 cardiotocogram measurments described in Ayres de Campos et al. (2000) SisPorto 2.0 A Program for Automated Analysis of Cardiotocograms. J Matern Fetal Med 5:311-318.  The CTG measurments where used to create a classification model to classify fetal health being either normal or distressed.  The DataFrame included the following columns:
 
-- ** baseline_value - Baseline Fetal Heart Rate
-- ** accelerations - Number of accelerations per second
-- ** fetal_movement - Number of fetal movements per second
-- ** uterine_contractions - Number of uterine contractions per second
-- ** light_decelerations - Number of LDs per second
-- ** severe_deceleration - Number of Sds per second
-- ** prolongued_deceleration - Number of PDs per second
-- ** abnormal_short_term_variatability - Percentage of time with abnormal short tearm variatability
-- ** mean_value_of_short_term_variability - Mean value of short term variability
-- ** percentage_of_time_with_abnormal_long_term_variability - Percentage of time with abnormal long term variability
-- ** mean_value_of_long_term_variability - average value of long tearm variability
-- ** histogram_width - Width of histogram using all the values from the record
-- ** histogram_min - minimum value of histogram
-- ** histogram_max - maximum value of hitogram
-- ** histogram_number_of_peaks - number of peaks in the exam histogram
-- ** histogram_number_of_zeroes - number of zeros in the exam histogram
-- ** histogram_mode - histogram mode
-- ** histogram_mean - histogram mean
-- ** histogram_median - histogram median
-- ** histogram_variance - histogram variance
-- ** histogram_tendency - histogram tendancy
-- ** fetal_health - 0: normal 1:distressed
+- **baseline_value - Baseline Fetal Heart Rate
+- **accelerations - Number of accelerations per second
+- **fetal_movement - Number of fetal movements per second
+- **uterine_contractions - Number of uterine contractions per second
+- **light_decelerations - Number of LDs per second
+- **severe_deceleration - Number of Sds per second
+- **prolongued_deceleration - Number of PDs per second
+- **abnormal_short_term_variatability - Percentage of time with abnormal short tearm variatability
+- **mean_value_of_short_term_variability - Mean value of short term variability
+- **percentage_of_time_with_abnormal_long_term_variability - Percentage of time with abnormal long term variability
+- **mean_value_of_long_term_variability - average value of long tearm variability
+- **histogram_width - Width of histogram using all the values from the record
+- **histogram_min - minimum value of histogram
+- **histogram_max - maximum value of hitogram
+- **histogram_number_of_peaks - number of peaks in the exam histogram
+- **histogram_number_of_zeroes - number of zeros in the exam histogram
+- **histogram_mode - histogram mode
+- **histogram_mean - histogram mean
+- **histogram_median - histogram median
+- **histogram_variance - histogram variance
+- **histogram_tendency - histogram tendancy
+- **fetal_health - 0: normal 1:distressed
 
 
 
@@ -65,7 +65,7 @@ To determine the key features in fetal health classification and produce the bes
 - Feature Engineering
 - Created two modeling process notebooks Vanilla and Experimental
     - to compare unaltered dataset model tuning to experimental feature dataset
-    - [histogram_mean](./images/histogram_class_by_hist_mean.png)
+[histogram_mean](./images/histogram_class_by_hist_mean.png)
 - modeling and hyperparameter tuning for both databases
     - KNN
     - Logistic Regression
