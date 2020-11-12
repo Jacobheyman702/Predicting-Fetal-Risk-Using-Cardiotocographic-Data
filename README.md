@@ -20,7 +20,7 @@ To address the issue of eliminating human error and erroneous surgical intervent
 
 ## Business Problem
 Preventing child mortality is a key indicator of medical progress.  A large precentage of deaths are the result of low access to resources that moniter fetal health.  One cost effective solution to moniter fetal health is the use of Cardiotocograms(CTGs). CTGs moniter fetal heart rate, fetal movement, uterine contractions, suddon heart rate changes and many other health metrics.  CTG scans are currently interpreted via visual analysis by the physician, and eroneous errors may result in increase fetal health risk.  Using a kaggle database of collected CTG exams, we aim to identify which features have the most impact on fetal health being either normal or distressed.  Using these features, we also aim to tune a model that provides the best predictions of fetal health class.  To identrify the key features and create a precise model we considered the following **research questions: 
-- What feature coefficients have the greatest influence on the model
+- What feature have the greatest influence on the model
 - What, if any, new features affect the model
 - Which model makes the best predictions of fetal health class, and has the most precise predictions. 
 
@@ -54,18 +54,37 @@ Our data came from Kaggle.com (https://www.kaggle.com/andrewmvd/fetal-health-cla
 
 
 ## Methods
-- data analysis and cleaning
+To determine the key features in fetal health classification and produce the best possible model, we implemented the following methods in our analysis
+- Initial Data Analysis and Data cleaning
+    - changed target class label into binary fetal health class (normal: 1, distressed: 2)
 - EDA
+    - In depth analysis of features and relations with other features and the target class
 - Baseline models
-- kept vanilla database
-- feature engineering for experimental database
+    - default models(KNN, Logistic Regression, Decision Tree, and Random Forest)
+- Feature Engineering
+- Created two modeling process notebooks Vanilla and Experimental
+    - to compare unaltered dataset model tuning to experimental feature dataset
 - modeling and hyperparameter tuning for both databases
-- checked feature importance and selected the best preforming models
+    - KNN
+    - Logistic Regression
+        - Bagging classifer 
+    - Decision Tree
+    - Random Forest
+        - GridSearch
+        - Model with best parameteres
+    - XGBoost
+        - Gridsearch
+        - Model with best parameters
+    
+- checked feature importance of best models
 
 
 
 
 ## Results
+In our exploritory analysis we preformed several baseline models to see how the dataset classifed fetal health.  Each baseline model was surprisingly accurate at predicting the classes.  We decided to preform two seperate modeling processes focusing on tuning the hyperparameters on the untouched dataset(vanilla) and an experimental dataset with new features.  For the experimental dataset we created several new features, using binning, dummy variables and a combination of several existing features.  
+
+
 - What features are the biggest factors in fetal health classification
 - What our best model was:
     - vanilla: grid search random forest
