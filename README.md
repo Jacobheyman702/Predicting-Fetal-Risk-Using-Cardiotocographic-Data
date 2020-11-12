@@ -97,7 +97,11 @@ The best model overall for **vanilla** was a grid search best features random fo
        - **F1 Score:** 0.9743589743589743
        - **Precision:** 0.973170731707317
    - **Top 10 Features**
-       ![rfc_top_10](./images/vanilla_rfc_top_10.png)
+       
+       
+![rfc_top_10](./images/vanilla_rfc_top_10.png)
+
+
 
 The best model overall for **Experimental** was a grid search best features XGBboost with the following hyperparemeters and evaluation metrics:
 
