@@ -89,6 +89,7 @@ In our exploritory analysis we preformed several baseline models to see how the 
 ![sqrt_total_change](./images/sqrt_total_change_by_class.png)
 
 The best model overall for vanilla was a grid search random forest with the following hyperparameters and evaluation metrics:
+    
     - **Best Parameters:** {'criterion': 'entropy', 'max_depth': 10, 'max_features': 10, 'n_estimators': 50, 'oob_score': False}
     - **Evaluation Metrics** 
         - **Accuracy:** 0.9605263157894737
