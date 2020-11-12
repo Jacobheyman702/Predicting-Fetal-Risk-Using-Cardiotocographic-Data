@@ -65,7 +65,7 @@ To determine the key features in fetal health classification and produce the bes
 - Feature Engineering
 - Created two modeling process notebooks Vanilla and Experimental
     - to compare unaltered dataset model tuning to experimental feature dataset
-[histogram_mean](./images/histogram_class_by_hist_mean.png)
+
 - modeling and hyperparameter tuning for both databases
     - KNN
     - Logistic Regression
@@ -80,6 +80,8 @@ To determine the key features in fetal health classification and produce the bes
     
 - checked feature importance of best models
 
+
+[histogram_mean](./images/histogram_class_by_hist_mean.png)
 
 
 
