@@ -57,28 +57,54 @@ Our data came from Kaggle.com (https://www.kaggle.com/andrewmvd/fetal-health-cla
 - data analysis and cleaning
 - EDA
 - Baseline models
-- feature engineering
-- modeling and hyperparameter tuning
+- kept vanilla database
+- feature engineering for experimental database
+- modeling and hyperparameter tuning for both databases
+- checked feature importance and selected the best preforming models
 
 
 
 
 ## Results
 - What features are the biggest factors in fetal health classification
-- What our best model was
+- What our best model was:
+    - vanilla: grid search random forest
+    - grid search xgboost
 - Which features attributed to out best model
+    - abnormal_short_term_variatability
+    - histogram mode
+    - histogram mean
+    - histogram width
+    - histogram min
 
 
 
 ## Conclusions
+- Our best models
+    - grid search xg boost
+    - best model for the vinella was grid search random forest
+- What features most influenced our best model
+    - abnormal_short_term_variatability
+    - histogram mode
+    - histogram mean
+    - histogram width
+    - histogram min
+- the xg boost gridsearch was the overall best model
+    - lowest recall and the a very high precision score
+- Using our model the fetal health can be more accuratly classified reducing the unnnecessary invasive surgery and the overal risk of fetal mortality.  
 
 
 
 ## Next Steps
+- make a multiclass for fetal health, multiple classes of fetal health to better classify the health state
+- find more ctg exam data to better train model.  This data set did not have a lot of instances for poor fetal health
+- consider maternal health and other diagnostic metrics into the model(heart rate, oxygen level, what anestetics are used)
 
  
 
 ## For More Information
+- kaggle dataset
+- ncbi papers
 
 
 
@@ -88,12 +114,12 @@ Our data came from Kaggle.com (https://www.kaggle.com/andrewmvd/fetal-health-cla
 
 ```
 ├── README.md                           <- 
-├── overview_and_cleaning.ipynb         <- 
-├── anaysis.ipynb                       <- 
-├── Movie_Analysis_Presentation.pdf     <- 
-├── helper_functions.py                 <- 
-├── csv_to_clean_dataframes.py          <- 
-├── exploration                         <- 
-├── zippedData                          <- 
-└──images                               <-  
+├── fetal_heatlh_data_analysis          <- 
+├── experimental_feature_Modeling       <- 
+├──                                     <- 
+├──                                     <- 
+├──                                     <- 
+├──                                     <- 
+├──                                     <- 
+└──                                     <-  
 ```
