@@ -130,14 +130,18 @@ Cardiotocographs are a cost effective method to moniter fetal health, and use ar
 
 ## Next Steps
 - make a multiclass for fetal health, multiple classes of fetal health to better classify the health state
-- find more ctg exam data to better train model.  This data set did not have a lot of instances for poor fetal health
+- find more CTG exam data to better train model.  This data set did not have a lot of instances for poor fetal health
 - consider maternal health and other diagnostic metrics into the model(heart rate, oxygen level, what anestetics are used)
 
  
 
 ## For More Information
-- kaggle dataset
-- ncbi papers
+- kaggle dataset [kaggle_data](https://www.kaggle.com/andrewmvd/fetal-health-classification)
+- ncbi papers [Hoodbhoy, Noman](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6822315/)
+- Notebooks
+    - [Analysis](./fetal_heatlh_data_analysis.ipynb)
+    - [Vanilla modeling process](./vanilla_model_cleaned.ipynb)
+
 
 
 
@@ -149,10 +153,10 @@ Cardiotocographs are a cost effective method to moniter fetal health, and use ar
 ├── README.md                           <- 
 ├── fetal_heatlh_data_analysis          <- 
 ├── experimental_feature_Modeling       <- 
-├──                                     <- 
-├──                                     <- 
-├──                                     <- 
-├──                                     <- 
-├──                                     <- 
+├── data.csv                            <- 
+├── experiment_features.csv             <- 
+├── experimental_feature modeling       <- 
+├── fetal_health_data_analysis          <- 
+├── vanila_model_cleaned                <- 
 └──                                     <-  
 ```
