@@ -90,14 +90,14 @@ In our exploritory analysis we preformed several baseline models to see how the 
 
 The best model overall for vanilla was a grid search random forest with the following hyperparameters and evaluation metrics:
     
-    - **Best Parameters:** {'criterion': 'entropy', 'max_depth': 10, 'max_features': 10, 'n_estimators': 50, 'oob_score': False}
-    - **Evaluation Metrics** 
-        - **Accuracy:** 0.9605263157894737
-        - **Recall:** 0.9755501222493888
-        - **F1 Score:** 0.9743589743589743
-        - **Precision:** 0.973170731707317
-    - **Top 10 Features**
-        - ![rfc_top_10](./images/vanilla_rfc_top_10.png)
+   - **Best Parameters:** {'criterion': 'entropy', 'max_depth': 10, 'max_features': 10, 'n_estimators': 50, 'oob_score': False}
+   - **Evaluation Metrics** 
+       - **Accuracy:** 0.9605263157894737
+       - **Recall:** 0.9755501222493888
+       - **F1 Score:** 0.9743589743589743
+       - **Precision:** 0.973170731707317
+   - **Top 10 Features**
+       - ![rfc_top_10](./images/vanilla_rfc_top_10.png)
 
 
 
