@@ -141,6 +141,7 @@ Cardiotocographs are a cost effective method to moniter fetal health, and use ar
 - Notebooks
     - [Analysis](./fetal_heatlh_data_analysis.ipynb)
     - [Vanilla modeling process](./vanilla_model_cleaned.ipynb)
+    - [experimental modeling process](.experimental_feature_Modeling.ipynb)
 
 
 
