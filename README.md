@@ -19,10 +19,10 @@ To address the issue of eliminating human error and erroneous surgical intervent
 
 
 ## Business Problem
-Preventing child mortality is a key indicator of medical progress.  A large precentage of deaths are the result of low access to resources that moniter fetal health.  One cost effective solution to moniter fetal health is the use of Cardiotocograms(CTGs). CTGs moniter fetal heart rate, fetal movement, uterine contractions, suddon heart rate changes and many other health metrics.  CTG scans are currently interpreted via visual analysis by the physician, and eroneous errors may result in increase fetal health risk.  Using a kaggle database of collected CTG exams, we aim to identify which features have the most impact on fetal health being either normal or distressed.  Using these features, we also aim to tune a model that provides the best predictions of fetal health class.  To identrify the key features and create a precise model we considered the following **research questions: 
-- What feature have the greatest influence on the model
-- What, if any, new features affect the model
-- Which model makes the best predictions of fetal health class, and has the most precise predictions. 
+Preventing child mortality is a key indicator of medical progress.  A large precentage of deaths are the result of low access to resources that moniter fetal health.  One cost effective solution to moniter fetal health is the use of Cardiotocograms(CTGs). CTGs moniter fetal heart rate, fetal movement, uterine contractions, suddon heart rate changes and many other health metrics.  CTG scans are currently interpreted via visual analysis by the physician, and eroneous errors may result in increase fetal health risk.  Using a kaggle database of collected CTG exams, we aim to identify which features have the most impact on fetal health being either normal or distressed.  Using these features, we also aim to tune a model that provides the best predictions of fetal health class.  To identrify the key features and create a precise model we considered the following **research questions:** 
+**- What feature have the greatest influence on the model**
+**- What, if any, new features affect the model**
+**- Which model makes the best predictions of fetal health class, and has the most precise predictions.** 
 
 
 ## Data
@@ -85,7 +85,20 @@ To determine the key features in fetal health classification and produce the bes
 
 
 ## Results
-In our exploritory analysis we preformed several baseline models to see how the dataset classifed fetal health.  Each baseline model was surprisingly accurate at predicting the classes.  We decided to preform two seperate modeling processes focusing on tuning the hyperparameters on the untouched dataset(vanilla) and an experimental dataset with new features.  For the experimental dataset we created several new features, using binning, dummy variables and a combination of several existing features.  
+In our exploritory analysis we preformed several baseline models to see how the dataset classifed fetal health.  Each baseline model was surprisingly accurate at predicting the classes.  We decided to preform two seperate modeling processes focusing on tuning the hyperparameters on the untouched dataset(vanilla) and an experimental dataset with new features.  For the experimental dataset we created several new features, using binning, dummy variables and a combination of several existing features.
+![sqrt_total_change](./images/sqrt_total_change_by_class.png)
+
+The best model overall for vanilla was a grid search random forest with the following hyperparameters and evaluation metrics:
+    - **Best Parameters:** {'criterion': 'entropy', 'max_depth': 10, 'max_features': 10, 'n_estimators': 50, 'oob_score': False}
+    - **Evaluation Metrics** 
+        - **Accuracy:** 0.9605263157894737
+        - **Recall:** 0.9755501222493888
+        - **F1 Score:** 0.9743589743589743
+        - **Precision:** 0.973170731707317
+    - **Top 10 Features**
+        - ![rfc_top_10](./images/vanilla_rfc_top_10.png)
+
+
 
 
 - What features are the biggest factors in fetal health classification
