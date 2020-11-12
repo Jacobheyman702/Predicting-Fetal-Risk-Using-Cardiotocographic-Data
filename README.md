@@ -88,7 +88,7 @@ To determine the key features in fetal health classification and produce the bes
 In our exploritory analysis we preformed several baseline models to see how the dataset classifed fetal health.  Each baseline model was surprisingly accurate at predicting the classes.  We decided to preform two seperate modeling processes focusing on tuning the hyperparameters on the untouched dataset(vanilla) and an experimental dataset with new features.  For the experimental dataset we created several new features, using binning, dummy variables and a combination of several existing features.
 ![sqrt_total_change](./images/sqrt_total_change_by_class.png)
 
-The best model overall for vanilla was a grid search random forest with the following hyperparameters and evaluation metrics:
+The best model overall for **vanilla** was a grid search best features random forest with the following hyperparameters and evaluation metrics:
     
    - **Best Parameters:** {'criterion': 'entropy', 'max_depth': 10, 'max_features': 10, 'n_estimators': 50, 'oob_score': False}
    - **Evaluation Metrics** 
@@ -99,7 +99,15 @@ The best model overall for vanilla was a grid search random forest with the foll
    - **Top 10 Features**
        - ![rfc_top_10](./images/vanilla_rfc_top_10.png)
 
+The best model overall for **Experimental** was a grid search best features XGBboost with the following hyperparemeters and evaluation metrics:
 
+   - **Best Parameters:** {'colsample_bytree': 0.45,'learning_rate': 0.07,'max_depth': 12,'min_child_weight': 1,
+                           'n_estimators': 500}
+   - **Evaluation Metrics**
+       - **Accuracy:** 0.9661654135338346
+       - **Recall:** 0.9902200488997555
+       - **F1 Score:** 0.9782608695652174
+       - **Precision:** 0.9665871121718377
 
 
 - What features are the biggest factors in fetal health classification
