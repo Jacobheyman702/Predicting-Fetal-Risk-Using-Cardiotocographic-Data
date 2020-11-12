@@ -112,19 +112,13 @@ The best model overall for **Experimental** was a grid search best features XGBb
        - **Recall:** 0.9902200488997555
        - **F1 Score:** 0.9782608695652174
        - **Precision:** 0.9665871121718377
-       
+   - **Top 10 Features:**
 
 
-- What features are the biggest factors in fetal health classification
-- What our best model was:
-    - vanilla: grid search random forest
-    - grid search xgboost
-- Which features attributed to out best model
-    - abnormal_short_term_variatability
-    - histogram mode
-    - histogram mean
-    - histogram width
-    - histogram min
+![ex_xgboost_top_10](./images/ex_xgboost_top_10.png)
+
+
+
 
 
 
