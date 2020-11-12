@@ -123,18 +123,8 @@ The best model overall for **Experimental** was a grid search best features XGBb
 
 
 ## Conclusions
-- Our best models
-    - grid search xg boost
-    - best model for the vinella was grid search random forest
-- What features most influenced our best model
-    - abnormal_short_term_variatability
-    - histogram mode
-    - histogram mean
-    - histogram width
-    - histogram min
-- the xg boost gridsearch was the overall best model
-    - lowest recall and the a very high precision score
-- Using our model the fetal health can be more accuratly classified reducing the unnnecessary invasive surgery and the overal risk of fetal mortality.  
+Cardiotocographs are a cost effective method to moniter fetal health, and use are used as a tool to  lower the child mortality rate.  One of the major issues with CTG monitereing was errors made through visual analysis.  Any invterventive surgery weather necessary or not increase risk.  In this study, we utalized multiple modeling processes to predict fetal health class, and attempted to create the highest precision in our prediction to reduce false positive classification instances.  With the CTG exam dataset from kaggle, we preformed two simultaneous medeling processes with a vanilla and experimental data set.  While the random forest model of our vanilla set had the highest precision, which was our target metric, the xgboost model of the experimental had the best overall metrics with a very high precision.  The key features in our best model where abnormal short term varitability, histogram mode, histogram min, histogram mean and histogram width.  All of these features are measurements of the fetal heart rates change over time.  This lines up with what is visually obsereved for fetal distress in the O.R.  Our model has a high precision and other metrics and can predict on these features to a greater effect than the standared visual analysis.  We believe that our model will help in the precise classification of fetal distress and improve the overall child mortality rate by reducing  risk through human error.  
+
 
 
 
