@@ -154,13 +154,11 @@ Cardiotocographs are a cost effective method to moniter fetal health, and use ar
 ## Repository Structure
 
 ```
-├── README.md                           <- 
-├── fetal_heatlh_data_analysis          <- 
-├── experimental_feature_Modeling       <- 
-├── data.csv                            <- 
-├── experiment_features.csv             <- 
-├── experimental_feature modeling       <- 
-├── fetal_health_data_analysis          <- 
-├── vanila_model_cleaned                <- 
-└── Phase_3_Project_Pres                <-  
+├── README.md                           <- Overview of the project
+├── fetal_heatlh_data_analysis          <- Analysis and EDA of Fetal health dataset
+├── experimental_feature_Modeling       <- Modeling process with experimental dataset
+├── data.csv                            <- folder for fetal health csv
+├── experiment_features.csv             <- experimental dataset       
+├── vanila_model_cleaned                <- modeling process with vanilla dataset
+└── Phase_3_Project_Pres                <- Presentation slidedeck
 ```
