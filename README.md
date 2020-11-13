@@ -1,5 +1,5 @@
 # Phase_3_Project
-![header](./images/500px-CTG_Output)
+![header](./images/500px-CTG_Output.jpg)
 
 
 # Predicting Fetal Risk Using Cardiotocographic Data
