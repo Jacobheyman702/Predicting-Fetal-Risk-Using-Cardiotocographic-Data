@@ -1,10 +1,7 @@
-# Phase_3_Project
-![header](./images/500px-CTG_Output.jpg)
-
-
 # Predicting Fetal Risk Using Cardiotocographic Data
+![header](https://www.babycenter.in/ims/2015/08/ThinkstockPhotos-467038537_wide.jpg)
 
-**Authors**: Jacob Heyman, Ismael Araujo
+**Authors**: Ismael Araujo and Jacob Heyman
 
 ## Overview
 As medical technology advances, the rate of preventable child mortality decreases. Lowering child mortality rates has become a key goal in advancing any society and a key in human progress as a whole. While there are many advancements that have improved the mortality rate, not all of these practices are globally available. In order to improve mortality rates in cost effective and readily available solutions need to be applied and perfected.
@@ -163,3 +160,4 @@ Cardiotocographs are a cost effective method to moniter fetal health, and use ar
 ├─  data.csv                            <- folder with fetal health dataset
 └── Phase_3_Project_Pres                <- Presentation slidedeck
 ```
+
