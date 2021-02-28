@@ -28,7 +28,7 @@ Preventing child mortality is a key indicator of medical progress.  A large perc
 
 
 ## Data
-Our data came from Kaggle.com (https://www.kaggle.com/andrewmvd/fetal-health-classification).  The data comes from 2126 cardiotocogram measurements described in Ayres de Campos et al. (2000) SisPorto 2.0 A Program for Automated Analysis of Cardiotocograms. J Matern Fetal Med 5:311-318.  The CTG measurments where used to create a classification model to classify fetal health being either normal or distressed.  The DataFrame included the following columns:
+Our data came from Kaggle.com (https://www.kaggle.com/andrewmvd/fetal-health-classification).  The data comes from 2126 cardiotocogram measurements described in Ayres de Campos et al. (2000) SisPorto 2.0 A Program for Automated Analysis of Cardiotocograms. J Matern Fetal Med 5:311-318.  The CTG measurements where used to create a classification model to classify fetal health being either normal or distressed.  The DataFrame included the following columns:
 
 - **baseline_value - Baseline Fetal Heart Rate**
 - **accelerations - Number of accelerations per second**
