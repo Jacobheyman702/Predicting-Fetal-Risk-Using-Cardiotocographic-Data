@@ -1,4 +1,4 @@
-# Phase_3_Project
+# Fetal Heart Rate Risk Classification
 ![header](./images/500px-CTG_Output.jpg)
 
 # Predicting Fetal Risk Using Cardiotocographic Data
